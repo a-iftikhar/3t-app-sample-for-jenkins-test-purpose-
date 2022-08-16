@@ -13,6 +13,6 @@ spec:
     targetPort: 4000
     protocol: TCP
   externalIPs: 
-    - 192.168.6.153:4000  
+    - 192.168.6.153
   selector:
     app: 3tier-app
