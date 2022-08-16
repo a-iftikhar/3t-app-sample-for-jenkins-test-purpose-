@@ -1,14 +1,38 @@
-# 3t-kubernetes
+# Jenkins pipline for kubernetes cluster
 
-## Step1: Install dependencies (kubernetes + kubeadm)
+## Step1: Install dependencies (Docker + kubernetes + kubeadm + jenkins)
 1. Clone the repository to the freshly installed Ubuntu 20.04.
 
-         git clone https://github.com/a-iftikhar/3t-kubernetes.git
+         git clone https://github.com/a-iftikhar/3t-app-sample-for-jenkins-test-purpose-.git
      
 2. Go to kinstall directory and invoke `run.sh` script.
          
          cd kinstall
          ./run.sh  
+
+3. install docker
+
+         curl -fsSL https://test.docker.com -o test-docker.sh
+         sudo sh test-docker.sh
+
+4. Install Jenkins
+
+         https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04
+
+
+
+5. Check for jenkins password 
+
+### username is ususally admin
+
+### password can be find using below command
+
+         sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+6. Install plugins on jenkins
+
+### Goto manage plugin -> install docker pipeline
+### Goto manage plugin -> install kubernetes continuous deploy
 
 ## Step2: Setting IP to enviornment 
 
