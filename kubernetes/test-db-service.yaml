@@ -8,5 +8,7 @@ spec:
   ports:
   - port: 27017
     protocol: TCP
+  externalIPs: 
+    - 192.168.6.153    
   selector:
     appdb: testdb
