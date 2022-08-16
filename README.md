@@ -95,13 +95,6 @@ backend service -> change (image:abdullah037/kube:backend to image:your_dockerre
          kubectl create -f test-db-deployment.yaml
          kubectl create -f test-db-service.yaml
 
-## Step7: Giving external IP to services
-
-To access the website you have to give your vm's to each service running
-         
-         kubectl patch svc frontend-service -p '{"spec":{"externalIPs":["Your_vm_IP"]}}' 
-         kubectl patch svc backend-service -p '{"spec":{"externalIPs":["Your_vm_IP"]}}'
-         kubectl patch svc mongodb-service -p '{"spec":{"externalIPs":["Your_vm_IP"]}}'
 
 ## Step8: access your website from browser
           
