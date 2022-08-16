@@ -31,8 +31,8 @@
 
 6. Install plugins on jenkins
 
-### Goto manage plugin -> install docker pipeline
-### Goto manage plugin -> install kubernetes continuous deploy
+# Goto manage plugin -> install docker pipeline
+# Goto manage plugin -> install kubernetes continuous deploy
 
 ## Step2: Setting IP to enviornment 
 
