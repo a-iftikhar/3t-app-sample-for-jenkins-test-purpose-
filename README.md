@@ -23,9 +23,9 @@
 
 5. Check for jenkins password 
 
-### username is ususally admin
+ username is ususally admin
 
-### password can be find using below command
+ password can be find using below command
 
          sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
